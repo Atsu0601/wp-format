@@ -1,0 +1,84 @@
+
+body,
+div,
+dl,dt,dd,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,td {
+   margin:0;
+   padding:0;
+}
+
+table {
+   border-collapse:collapse;
+   border-spacing:0;
+}
+
+fieldset,img {
+   border:0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,strong,
+th,
+var {
+   font-style:normal;
+   font-weight:normal;
+}
+
+ol,ul {
+   list-style:none;
+}
+
+caption,th {
+   text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-size:100%;
+   font-weight:normal;
+}
+
+q:before,
+q:after {
+   content:'';
+}
+
+abbr,acronym {
+   border:0;
+}
+
+
+/*iosのフォームボタンリセット*/
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration,
+input[type="reset"]::-webkit-search-decoration  {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus,
+input[type="reset"]::focus {
+  outline-offset: -2px;
+}

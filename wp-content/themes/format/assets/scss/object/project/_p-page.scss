@@ -1,0 +1,70 @@
+@use "../../global" as *;
+
+.p-page__mainvisual {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    border-bottom: rem(15) solid $color-primary;
+    display: flex;
+    height: rem(250);
+    margin-bottom: rem(10);
+    &::before {
+        position: absolute;
+        content: "";
+        top: -30%;
+        left: 0;
+        height: rem(330);
+        width: calc(100% - 65vw);
+        background-color: $color-primary;
+        z-index: -3;
+    }
+
+    &::after {
+        width: 100%;
+        position: absolute;
+        content: "";
+        margin-right: -1%;
+        width: 105%;
+        height: rem(150);
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $white;
+        z-index: -2;
+        text-align: center;
+        filter: drop-shadow(0 rem(3) rem(6) rgba(0, 0, 0, 0.16));
+    }
+    &__ttlblk {
+        text-align: center;
+
+        &__ttl {
+            font-size: rem(50);
+            font-weight: bold;
+            letter-spacing: rem(2);
+            margin-bottom: 0;
+            margin-top: 0;
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &__txt {
+            font-size: rem(21);
+            letter-spacing: rem(1);
+            margin-top: rem(10);
+            margin-bottom: 0;
+            text-transform:capitalize;
+        }
+    }
+}
+
+.p-article__page {
+    margin: rem(100) 0 rem(120);
+    line-height: rem(23);
+
+    .p-article__title {
+        margin-bottom: rem(20);
+        border-bottom: rem(4) solid $color-primary;
+        padding-bottom: rem(20);
+    }
+}

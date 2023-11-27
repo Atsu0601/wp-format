@@ -1,0 +1,10 @@
+// デフォルトCSSをほぼ全て初期化する場合は、reset.scssを読み込む
+// @use 'reset';
+
+// デフォルトCSSで適用されるスタイルは可能な限り残す場合は、normalize.scssを読み込む
+@use 'normalize';
+
+// normalizeをより便利になった簡易的なcssフレームワークを使用する場合、sanitize.scssを読み込む
+// @use 'sanitize';
+
+@use 'base';

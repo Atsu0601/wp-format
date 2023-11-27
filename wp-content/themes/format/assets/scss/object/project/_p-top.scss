@@ -1,0 +1,168 @@
+@use "../../global" as *;
+
+.p-top {
+    &__mainvisual {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        border-bottom: rem(15) solid $color-primary;
+        display: flex;
+        height: rem(500);
+        margin-bottom: rem(118);
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: -18%;
+            left: 0;
+            height: rem(600);
+            width: calc(100% - 65vw);
+            background-color: $color-primary;
+            z-index: -1;
+        }
+
+        &::after {
+            width: 100%;
+            position: absolute;
+            content: "";
+            width: 102%;
+            height: rem(180);
+            top: 50%;
+            right: -15%;
+            transform: translateY(-50%);
+            background-color: $white;
+            z-index: -2;
+            text-align: center;
+            filter: drop-shadow(0 rem(3) rem(6) rgba(0, 0, 0, 0.16));
+        }
+        .inner {
+            display: flex;
+            align-items: center;
+        }
+        &__ttlblk {
+            margin-left: rem(180);
+            text-align: center;
+    
+            &__ttl {
+                font-size: rem(100);
+                font-weight: bold;
+                letter-spacing: rem(2);
+                margin-bottom: 0;
+                margin-top: 0;
+    
+                span {
+                    color: $color-primary;
+                }
+            }
+    
+            &__txt {
+                font-size: rem(25);
+                letter-spacing: rem(1);
+                margin-top: 0;
+            }
+        }
+        &__sns {
+            position: absolute;
+            bottom: 0;
+            right: rem(20);
+            display: flex;
+            gap: 0 rem(40);
+            justify-content: space-between;
+            align-items: center;
+            max-width: rem(220);
+            color: $color-primary;
+    
+            &__ttl {
+                position: relative;
+    
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 50%;
+                    right: rem(-60);
+                    background-color: $color-primary;
+                    transform: translateY(-50%);
+                    width: rem(40);
+                    height: rem(1);
+                }
+            }
+    
+            &__blk {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+        }
+    }
+
+    .p-top__content{
+        &__blk{
+            margin: rem(60) auto rem(150);
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: rem(50) rem(30);
+            list-style: none;
+            flex-wrap: wrap;
+            
+            li{
+                text-align: center;
+                padding: rem(40) rem(20);
+                background-color: $white;
+                filter: drop-shadow(0 rem(3) rem(6) rgba(0, 0, 0, 0.16));
+            }
+        }
+        &__ttl{
+            margin-bottom: rem(40);
+        }
+    }
+    .p-top__profile{
+        position: relative;
+        height: rem(640);
+        margin-bottom: rem(60);
+        &__bk{
+            background-color: $color-primary;
+            max-width: rem(820);
+            width: 100%;
+            margin: rem(60) auto rem(60);
+            height: rem(320);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__white{
+            padding: rem(40) 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            background-color: $white;
+            max-width: rem(800);
+            width: 100%;
+            height: rem(340);
+            margin: auto;
+            filter: drop-shadow(0 rem(3) rem(6) rgba(0, 0, 0, 0.16));
+        }
+        &__icon{
+            max-width: rem(120);
+            display: block;
+            margin: auto;
+        }
+        &__name{
+            text-align: center;
+            margin: rem(40) 0;
+            font-size: rem(18);
+        }
+        &__txt{
+            text-align: center;
+            font-size: rem(14);
+            color: $gray;
+            max-width: 80%;
+            margin: auto;
+            line-height: rem(25);
+        }
+    }
+}

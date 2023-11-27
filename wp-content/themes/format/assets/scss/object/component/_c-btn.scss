@@ -1,0 +1,22 @@
+@use "../../global" as *;
+.c-btn_bk{
+    background-color: $btn-color;
+    color: $white;
+    min-width: rem(135);
+    display: block;
+    padding: rem(20) rem(30);
+    margin: rem(0) rem(30);
+    text-align: center;
+    font-size: rem(12);
+}
+
+.c-btn_lg{
+    background-color: $btn-color;
+    color: $white;
+    max-width: rem(300);
+    display: block;
+    padding: rem(20) rem(30);
+    margin: rem(0) auto rem(30);
+    text-align: center;
+    font-size: rem(12);
+}

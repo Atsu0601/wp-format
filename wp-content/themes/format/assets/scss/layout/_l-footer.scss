@@ -1,0 +1,46 @@
+@use "../global" as *;
+.l-footer {
+  width: 100%;
+  max-width: 100%;
+  background-color: $color-primary;
+  color: $white;
+  padding: rem(60) 0;
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+
+  }
+  &__navi{
+    margin-right: rem(200);
+    &__lists{
+      display: flex;
+      gap: 0 rem(40);
+      align-items: center;
+      justify-content: center;
+      li{
+        list-style: none;
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+  &__sns{
+    &__lists{
+      list-style: none;
+      li{
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
+  &__copy{
+    text-align: center;
+    font-size: rem(14);
+    margin-top: rem(50);
+  }
+}
