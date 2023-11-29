@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="keywords" content="">
     <meta name="format-detection" content="telephone=no" />
     <title><?php echo trim(wp_title('', false));
@@ -26,10 +26,10 @@
         <meta name="description" content="<?php the_excerpt(); ?>" />
     <?php endif; ?>
     <!-- アイコン -->
-    <link rel="shortcut icon" href="/assets/images/common/favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" href="/assets/images/common/apple-touch-icon.png"/>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ?>/assets/images/common/apple-touch-icon.png"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri() ?>/assets/js/jquery.min.js"></script>
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
     <link href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/style.css" rel="stylesheet">
     <script src="<?php echo get_stylesheet_directory_uri() ?>/assets/js/script.js"></script>
