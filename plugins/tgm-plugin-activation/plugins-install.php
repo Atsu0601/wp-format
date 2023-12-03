@@ -58,7 +58,54 @@ function ceare_theam_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
+		array(
+            'name'               => 'ALL IN ONE SEO PACK',
+            'slug'               => 'all-in-one-seo-pack',
+            'source'             => 'http://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
+		array(
+            'name'               => 'MW WP Form',
+            'slug'               => 'mw-wp-form',
+            'source'             => 'http://downloads.wordpress.org/plugin/mw-wp-form.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
+		array(
+            'name'               => 'WP Migrate DB',
+            'slug'               => 'wp-migrate-db',
+            'source'             => 'http://downloads.wordpress.org/plugin/wp-migrate-db.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
+		array(
+            'name'               => 'Intuitive Custom Post Order',
+            'slug'               => 'intuitive-custom-post-order',
+            'source'             => 'http://downloads.wordpress.org/plugin/intuitive-custom-post-order.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
+		array(
+            'name'               => 'Breadcrumb NavXT',
+            'slug'               => 'breadcrumb-navxt',
+            'source'             => 'http://downloads.wordpress.org/plugin/breadcrumb-navxt.zip',
+            'required'           => true,
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
+		array(
+            'name'               => 'wp pagenavi',
+            'slug'               => 'wp-pagenavi',
+            'required'           => true,
+            'source'             => 'http://downloads.wordpress.org/plugin/wp-pagenavi.zip',
+            'force_activation'   => false,
+            'force_deactivation' => false,
+        ),
 		// This is an example of how to include a plugin bundled with a theme.
 		array(
 			'name'               => 'TGM Example Plugin', // The plugin name.
