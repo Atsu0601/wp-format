@@ -159,6 +159,6 @@ add_filter('the_content', 'filter_ptags_on_images');
 
 
 // プラグイン自動インストール
-require get_parent_theme_file_path( '/plugins/tgm-plugin-activation/tgm-plugin-activation/tgm-config.php' );
+require get_parent_theme_file_path( '/plugins/tgm-plugin-activation/tgm-plugin-activation/plugins-install.php' );
 
 
